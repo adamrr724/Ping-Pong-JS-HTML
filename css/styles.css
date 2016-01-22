@@ -24,8 +24,9 @@ ul {
   list-style-type: none;
 }
 
-li {
-  margin:1;
+ul li {
+  margin: 1em;
+  font-weight: bold;
 }
 
 h1 {
