@@ -33,9 +33,9 @@ $(document).ready(function(event) {
       if (num <= 0 ) {
    		alert("Please enter a positive number");
    	} else {
-   		result.forEach(function(element) {
+   		result.forEach(function(listItem) {
         debugger;
-   			$("ul#list").append("<li>" + element + "</li>");
+   			$("ul#list").append("<li>" + listItem + "</li>");
         $("#result").show();
    		});
     };

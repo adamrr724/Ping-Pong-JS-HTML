@@ -1,3 +1,22 @@
+body {
+  text-align: center;
+}
+
 #result {
   display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin:1;
+}
+
+img {
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

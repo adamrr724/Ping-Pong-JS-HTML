@@ -9,15 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping Pong</h1>
+      <div class="jumbotron">
+        <img src="img/airplane.jpg" alt="" />
+          <h1>Ping Pong</h1>
+          <label for="message">Enter a number and I will Ping Pong it!</label>
+      </div>
 
       <form id="pingpong">
         <div class="form-group">
-          <label for="message">Enter a number and I will Ping Pong it!</label>
           <input id="message1" type="number">
         </div>
-
         <button type="submit" class="btn">Submit</button>
+        <button type="reset" value="Clear Results" onClick="window.location.reload()" class="btn btn-default">Reset</button>
+        </div>
       </form>
 
       <div id="result">
