@@ -7,23 +7,20 @@ var pingPong = function(num) {
   for (var i = 1; i <= num; i++) {
 
     if (i % 15 === 0) {
-      debugger;
       array1[i] = "pingpong";
       array1.push[i];
-    } else if (i % 5 === 0) {
-        array1[i] = "pong";
-        array1.push[i];
-    } else if (i % 3 === 0) {
-        array1[i] = "ping";
-        array1.push[i];
-    } else {
-        array1.push(i);
-    }
+      } else if (i % 5 === 0) {
+          array1[i] = "pong";
+          array1.push[i];
+      } else if (i % 3 === 0) {
+          array1[i] = "ping";
+          array1.push[i];
+      } else {
+          array1.push(i);
+      }
   };
   return array1;
 };
-
-
 
 // Interface Logic
 
@@ -35,13 +32,12 @@ $(document).ready(function(event) {
 
       if (num <= 0 ) {
    		alert("Please enter a positive number");
-   	} else {
-   		result.forEach(function(listItem) {
-        debugger;
-   			$("ul#list").append("<li>" + listItem + "</li>");
-        $("#result").show();
-   		});
-    };
+     	} else {
+     		result.forEach(function(listItem) {
+     			$("ul#list").append("<li>" + listItem + "</li>");
+          $("#result").show();
+     		});
+      };
 
   event.preventDefault();
 
