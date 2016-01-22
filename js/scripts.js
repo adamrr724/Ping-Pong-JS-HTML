@@ -1,10 +1,13 @@
-var pingpong = function(num) {
+// Business logic
+
+var pingPong = function(num) {
 
   var array1 = [];
 
   for (var i = 1; i <= num; i++) {
 
     if (i % 15 === 0) {
+      debugger;
       array1[i] = "pingpong";
       array1.push[i];
     } else if (i % 5 === 0) {
@@ -22,13 +25,13 @@ var pingpong = function(num) {
 
 
 
-
+// Interface Logic
 
 $(document).ready(function(event) {
-    $("form#pingpong").submit(function(event){
+    $("form#pingPong").submit(function(event){
 
       var num = parseInt($("input#message1").val());
-      var result = pingpong(num);
+      var result = pingPong(num);
 
       if (num <= 0 ) {
    		alert("Please enter a positive number");
