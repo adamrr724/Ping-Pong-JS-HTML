@@ -16,4 +16,8 @@ describe("pingpong", function() {
     expect(pingpong(15)).to.eql('1 2  ping 4 pong ping 7 8 ping pong 11 ping 13 14 pingpong');
   });
 
+  it("returns the values into the html sheet in listed items", function() {
+    expect(pingpong(1)).to.eql('1');
+  });
+
 });

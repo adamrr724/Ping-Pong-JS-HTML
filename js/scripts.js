@@ -17,7 +17,6 @@ var pingpong = function(num) {
         array1.push(i);
     }
   };
-  array1 = array1.join().replace(/,/g , " ");
   return array1;
 };
 
@@ -31,8 +30,16 @@ $(document).ready(function(event) {
       var num = parseInt($("input#message1").val());
       var result = pingpong(num);
 
-  $("#list").append("<li>" + result + "</li>");
-  $("#result").show();
+      if (num <= 0 ) {
+   		alert("Please enter a positive number");
+   	} else {
+   		result.forEach(function(element) {
+        debugger;
+   			$("ul#list").append("<li>" + element + "</li>");
+        $("#result").show();
+   		});
+    };
+
   event.preventDefault();
 
 });
